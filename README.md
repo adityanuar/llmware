@@ -4,15 +4,19 @@
 [![discord](https://img.shields.io/badge/Chat%20on-Discord-blue?logo=discord&logoColor=white)](https://discord.gg/MhZn5Nc39h)   
 [![Documentation](https://github.com/llmware-ai/llmware/actions/workflows/pages.yml/badge.svg)](https://github.com/llmware-ai/llmware/actions/workflows/pages.yml)
 
-## 🧰🛠️🔩The Ultimate Toolkit for Building LLM Apps
+## 🧰🛠️🔩Building Enterprise RAG Pipelines with Small, Specialized Models  
 
-From quickly building POCs to scalable LLM Apps for the enterprise, LLMWare is packed with all the tools you need. 
+`llmware` provides a unified framework for building LLM-based applications (e.g, RAG, Agents), using small, specialized models that can be deployed privately, integrated with enterprise knowledge sources safely and securely, and cost-effectively tuned and adapted for any business process.  
 
-`llmware` is an integrated framework with over 50+ models for quickly developing LLM-based applications including Retrieval Augmented Generation (RAG) and Multi-Step Orchestration of Agent Workflows.  
+ `llmware` has two main components:  
+ 
+ 1.  **RAG Pipeline** - integrated components for the full lifecycle of connecting knowledge sources to generative AI models; and 
 
-This project provides a comprehensive set of tools that anyone can use - from a beginner to the most sophisticated AI developer - to rapidly build industrial-grade, knowledge-based enterprise LLM applications. 
+ 2.  **50+ small, specialized models** fine-tuned for key tasks in enterprise process automation, including fact-based question-answering, classification, summarization, and extraction.  
 
-Our specific focus is on making it easy to integrate open source small specialized models and connecting enterprise knowledge safely and securely. 
+By bringing together both of these components, along with integrating leading open source models and underlying technologies, `llmware` offers a comprehensive set of tools to rapidly build knowledge-based enterprise LLM applications.  
+
+Most of our examples can be run without a GPU server - get started right away on your laptop.   
 
 [Join us on Discord](https://discord.gg/MhZn5Nc39h)   |  [Watch Youtube Tutorials](https://www.youtube.com/@llmware)  | [Explore our Model Families on Huggingface](https://www.huggingface.co/llmware)   
 
@@ -37,7 +41,7 @@ Writing code with`llmware` is based on a few main concepts:
 
 
 ```python
-#   50+ Models in Catalog with 20+ RAG-optimized BLING, DRAGON and Industry BERT models
+#   150+ Models in Catalog with 50+ RAG-optimized BLING, DRAGON and Industry BERT models
 #   Full support for GGUF, HuggingFace, Sentence Transformers and major API-based models
 #   Easy to extend to add custom models - see examples
 
@@ -595,9 +599,13 @@ if __name__ == "__main__":
 
 ## 🔥 What's New? 🔥  
 
+-**Best New Small RAG Model** - BLING finetune of Phi-3 - "bling-phi-3-gguf" - see the [video](https://youtu.be/cViMonCAeSc?si=L6jX0sRdZAmKtRcz)  
+
 -**Web Services with Agent Calls for Financial Research** - end-to-end scenario - [video](https://youtu.be/l0jzsg1_Ik0?si=hmLhpT1iv_rxpkHo) and [example](examples/Use_Cases/web_services_slim_fx.py)  
 
--**Voice Transcription with WhisperCPP** - [getting_started](examples/Models/using-whisper-cpp-getting-started.py), [using_sample_files](examples/Models/using-whisper-cpp-sample-files.py), and [analysis_use_case](examples/Use_Cases/parsing_great_speeches.py)    
+-**Voice Transcription with WhisperCPP** - [getting_started](examples/Models/using-whisper-cpp-getting-started.py), [using_sample_files](examples/Models/using-whisper-cpp-sample-files.py), and [analysis_use_case](examples/Use_Cases/parsing_great_speeches.py) with [great_speeches_video](https://youtu.be/5y0ez5ZBpPE?si=KVxsXXtX5TzvlEws)    
+
+-**Phi-3 GGUF Streaming Local Chatbot with UI** - setup your own Phi-3-gguf chatbot on your laptop in minutes - [example](examples/UI/gguf_streaming_chatbot.py)  with [video](https://youtu.be/gzzEVK8p3VM?si=8cNn_do0oxSzCEnM)  
 
 -**Small, specialized, function-calling Extract Model** - introducing slim-extract - [video](https://youtu.be/d6HFfyDk4YE?si=VB8JTsN3X7hsB_I) and [example](examples/SLIM-Agents/using_slim_extract_model.py)  
 
@@ -607,15 +615,15 @@ if __name__ == "__main__":
 
 -**Multi-Model Agents with SLIM models** - multi-step Agents with SLIMs on CPU - [video](https://www.youtube.com/watch?v=cQfdaTcmBpY) - [example](examples/SLIM-Agents)  
 
--**OCR Embedded Document Images Example** - systematically extract text from images embeddedd in documents ([example](examples/Parsing/ocr_embedded_doc_images.py))  
+-**OCR Embedded Document Images Example** - systematically extract text from images embedded in documents [example](examples/Parsing/ocr_embedded_doc_images.py)   
 
--**Enhanced Parser Functions for PDF, Word, Powerpoint and Excel** - new text-chunking controls and strategies, extract tables, images, header text - ([example](examples/Parsing/pdf_parser_new_configs.py))   
+-**Enhanced Parser Functions for PDF, Word, Powerpoint and Excel** - new text-chunking controls and strategies, extract tables, images, header text - [example](examples/Parsing/pdf_parser_new_configs.py)   
 
 -**Agent Inference Server** - set up multi-model Agents over Inference Server [example](https://github.com/llmware-ai/llmware/tree/main/examples/SLIM-Agents/agent_api_endpoint.py)  
 
 -**GGUF - Getting Started** - check out examples - GGUF ([example](examples/Models/using_gguf.py)) and Videos [video](https://www.youtube.com/watch?v=ZJyQIZNJ45E)  
 
-
+-**Optimizing Accuracy of RAG Prompts** - check out [example](examples/Models/adjusting_sampling_settings.py) and videos - [part I](https://youtu.be/7oMTGhSKuNY?si=14mS2pftk7NoKQbC) and [part II](https://youtu.be/iXp1tj-pPjM?si=T4teUAISnSWgtThu)  
 
 ## 🌱 Getting Started
 
@@ -656,6 +664,8 @@ Check out:  [llmware examples](https://github.com/llmware-ai/llmware/blob/main/e
 <summary><b>Step 3 - Tutorial Videos</b> - check out our Youtube channel for high-impact 5-10 minute tutorials on the latest examples.   </summary>
 
 🎬 Check out these videos to get started quickly:  
+- [Document Summarization](https://youtu.be/Ps3W-P9A1m8?si=Rxvst3RJv8ZaOk0L)  
+- [Bling-3-GGUF Local Chatbot](https://youtu.be/gzzEVK8p3VM?si=8cNn_do0oxSzCEnM)  
 - [Agent-based Complex Research Analysis](https://youtu.be/y4WvwHqRR60?si=jX3KCrKcYkM95boe)  
 - [Getting Started with SLIMs (with code)](https://youtu.be/aWZFrTDmMPc?si=lmo98_quo_2Hrq0C)  
 - [Are you prompting wrong for RAG - Stochastic Sampling-Part I](https://youtu.be/7oMTGhSKuNY?si=_KSjuBnqArvWzYbx)  
@@ -758,6 +768,17 @@ The llmware repo can be pulled locally to get access to all the examples, or to 
 git clone git@github.com:llmware-ai/llmware.git
 ```
 
+After cloning the repo, depending upon your IDE enviroment, you may need to take these additional steps:  
+1.  **install requirements.txt** - inside the /llmware path - e.g., ```pip3 install -r llmware/requirements.txt```   (If you copy the requirements.txt file into the root of the project folder, then many IDEs will auto install the requirements and/or you can then run the canonical `pip3 install -r requirements.txt`)   
+2.  **run examples** - copy the example .py file into the root project path.   (We have seen several IDEs that will attempt to run interactively from the nested /example path, and then not have access to the /llmware module.  We will look into fixing this with a small automation script, but for now, the easy fix is to just copy the example you want to run into the root path).  
+3.  **install vector db** - to use a vector db, you will need to separately install the python library for that vector db, e.g., `pip3 install pymilvus`, or `pip3 install chromadb`.  
+4.  Note:  we have seen recently issues with Pytorch==2.3 on some platforms - if you run into any issues, we have seen that uninstalling Pytorch and downleveling to Pytorch==2.1 usually solves the problem.  
+
+As an alternative, we have provided a **welcome_to_llmware** automation script in the root of the repository folder.  After cloning:  
+- On Windows command line:  `.\welcome_to_llmware_windows.sh`  
+- On Mac / Linux command line:  `sh ./welcome_to_llmware.sh`  
+
+
 <details>  
     
 <summary> ✨  <b>Roadmap - Where are we going ... </b>  </summary>
@@ -770,9 +791,8 @@ git clone git@github.com:llmware-ai/llmware.git
 - 💡 Enterprise scalability - containerization, worker deployments and Kubernetes  
 - 💡 Integration of SQL and other scale enterprise data sources  
 - 💡 Multi-step, multi-model Agent-based workflows with small, specialized function-calling models  
-- 💡 New Documentation - **Coming Soon**  
 
-Like our models, we aspire for llmware to be "small, but mighty" - easy to use and get started, but packing a powerful punch!
+Like our models, we aspire for llmware to be "small, but mighty" - easy to use and get started, but packing a powerful punch!  
 
 </details>
 
@@ -782,12 +802,23 @@ Questions and discussions are welcome in our [github discussions](https://github
 
 ## 📣  Release notes and Change Log  
 
-**Wednesday, May 8 - v0.2.13-WIP Update**  
+**Wednesday, May 22 - v0.2.15-WIP**  
+- Improvements in Model class handling of Pytorch and Transformers dependencies (just-in-time loading, if needed)  
+- Expanding API endpoint options and inference server functionality  
+- Updates merged in main branch with PyPy release targeted for Thursday, May 23 by EOD    
+
+**Saturday, May 18 - v0.2.14**  
+- New OCR image parsing methods with [example](https://github.com/llmware-ai/llmware/tree/main/examples/Use_Cases/slicing_and_dicing_office_docs.py)  
+- Adding first part of logging improvements (WIP) in Configs and Models.    
+- New embedding model added to catalog - industry-bert-loans.  
+- Updates to model import methods and configurations.  
+
+**Sunday, May 12 - v0.2.13**  
+- New GGUF streaming method with [basic example](https://github.com/llmware-ai/llmware/tree/main/examples/Models/gguf_streaming.py) and [phi3 local chatbot](https://github.com/llmware-ai/llmware/tree/main/examples/UI/gguf_streaming_chatbot.py)  
 - Significant cleanups in ancillary imports and dependencies to reduce install complexity - note: the updated requirements.txt and setup.py files.  
 - Defensive code to provide informative warning of any missing dependencies in specialized parts of the code, e.g., OCR, Web Parser.  
 - Updates of tests, notice and documentation.   
-- OpenAIConfigs created to support Azure OpenAI.  
-- Changes are merged in main branch with further updates coming - expect to release PyPi 0.2.13 by end of week.  
+- OpenAIConfigs created to support Azure OpenAI.   
   
 **Sunday, May 5 - v0.2.12 Update**  
 - Launched ["bling-phi-3"](https://huggingface.co/llmware/bling-phi-3) and ["bling-phi-3-gguf"](https://huggingface.co/llmware/bling-phi-3-gguf) in ModelCatalog - newest and most accurate BLING/DRAGON model  
